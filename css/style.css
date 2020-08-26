@@ -1,0 +1,407 @@
+/* general Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* Utility Classes */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary {
+    color: #ff3333;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #ff3333;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin: 0 0.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+    background-color: #ff3333;
+}
+
+
+/*  Showcase Area */
+
+#showcase {
+    background: url(../img/semi-opened-laptop-computer-turned-on-on-table-2047905.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    height: 91%;
+    width: 100%;
+    color: #fff;
+}
+
+.showcase-content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+}
+
+.showcase-content .btn:hover {
+    background: #ff3333;
+    color: #fff;
+    transition: color 0.3s, background 0.3s;
+}
+
+.btn {
+    color: #ff3333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #ff3333;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* Section About */
+
+#about {
+    padding: 5rem 0;
+}
+
+#about h2,
+#services h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+#about .about-content {
+    display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+    flex: 1;
+}
+
+#about .about-text {
+    text-align: justify;
+}
+
+#about .about-image img {
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+
+/* Section: Activity */
+
+#activity {
+    padding: 5rem 0;
+}
+
+#activity h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+#activity h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#activity .boxes {
+    display: flex;
+}
+
+#activity .box {
+    background: #fff;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.3rem;
+}
+
+#activity .box i {
+    color: #fff;
+    padding: 1rem;
+    background: #ff3333;
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Section: Experience */
+
+#experience {
+    background: url(../img/bottom-view-photo-of-buildings-1192057.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+}
+
+.experience-bg {
+    position: absolute;
+    height: 92%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5rem 0;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#experience .boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience .box {
+    background: rgba(197, 48, 48, 0.849);
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#experience .box:first-child,
+#experience .box:nth-child(2) {
+    margin-bottom: 3rem;
+}
+
+#experience .box img {
+    border-radius: 50%;
+    margin-right: 2rem;
+    padding: 5px;
+    width: 150px;
+}
+
+#experience p {
+    color: #fff;
+}
+
+
+/* Watching */
+
+iframe,
+audio {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #ff3333;
+    text-align: center;
+}
+
+.rock {
+    height: 5px;
+}
+
+
+/* Section Contact */
+
+#contact {
+    padding: 5rem 0;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+}
+
+.mail-icon {
+    font-size: 4rem;
+    background: #ff3333;
+    color: #fff;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    position: relative;
+    top: -15%;
+    left: 45%;
+}
+
+#contact h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    margin-top: 5rem;
+}
+
+#contact .form-box {
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    border-radius: 10px;
+}
+
+#contact .form-group {
+    margin-bottom: 2rem;
+}
+
+#contact .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.1rem;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 0.5px solid #333;
+    border-radius: 5px;
+}
+
+#contact .form-group textarea {
+    font-family: Arial, sans-serif;
+}
+
+#contact .contact-btn {
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background: #ff3333;
+    color: #fff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-size: 200%;
+}
+
+#contact .contact-btn .btn1 {
+    background-image: linear-gradient(to left, #ff3565, #e65845, #de3f2a);
+}
+
+#contact .contact-btn:hover {
+    background-position: right;
+}
+
+
+/* Social Media */
+
+.face {
+    transform: scale(0.4);
+    margin: 0 auto;
+    display: block;
+    margin-top: -35px;
+    margin-bottom: -25px;
+}
+
+#sosmed img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#sosmed a {
+    text-decoration: none;
+}
+
+#sosmed img:hover {
+    opacity: 0.8;
+}
+
+#sosmed {
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 2.5rem;
+}
+
+footer p {
+    text-align: center;
+}
